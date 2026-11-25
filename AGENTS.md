@@ -28,3 +28,5 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- All financial figures come from the deterministic engines in `src/lib/unit/engine.ts` (one `IndustryDef` per industry); UI and advisor only read `Result`, never compute money — keeps numbers auditable and tested in `engine.test.ts`.
